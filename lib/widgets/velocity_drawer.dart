@@ -4,7 +4,9 @@ import 'package:velocity_x/velocity_x.dart';
 import 'package:velocityx_app/pages/box_page.dart';
 import 'package:velocityx_app/pages/card_page.dart';
 import 'package:velocityx_app/pages/colors_page.dart';
+import 'package:velocityx_app/pages/flex_page.dart';
 import 'package:velocityx_app/pages/home_page.dart';
+import 'package:velocityx_app/pages/list_page.dart';
 import 'package:velocityx_app/pages/padding_page.dart';
 import 'package:velocityx_app/pages/size_box.dart';
 import 'package:velocityx_app/pages/text_page.dart';
@@ -37,7 +39,8 @@ class VelocityDrawer extends StatelessWidget {
               color: Colors.white,
             ),
             title: "Padding".text.white.xl2.make(),
-            onTap: () => context.nav.pushReplacementNamed(PaddingPage.routeName),
+            onTap: () =>
+                context.nav.pushReplacementNamed(PaddingPage.routeName),
           ),
           ListTile(
             leading: Icon(
@@ -69,16 +72,16 @@ class VelocityDrawer extends StatelessWidget {
               color: Colors.white,
             ),
             title: "Size Box".text.white.xl2.make(),
-            onTap: () => context.nav.pushReplacementNamed(SizeBoxPage.routeName),
+            onTap: () =>
+                context.nav.pushReplacementNamed(SizeBoxPage.routeName),
           ),
-          "Documentation Pending".text.white.make().p20(),
           ListTile(
             leading: Icon(
               LineAwesomeIcons.stack_exchange,
               color: Colors.white,
             ),
             title: "Flex".text.white.xl2.make(),
-            onTap: () {},
+            onTap: () => context.nav.pushReplacementNamed(FlexPage.routeName),
           ),
           ListTile(
             leading: Icon(
@@ -86,58 +89,59 @@ class VelocityDrawer extends StatelessWidget {
               color: Colors.white,
             ),
             title: "List".text.white.xl2.make(),
-            onTap: () {},
+            onTap: () => context.nav.pushReplacementNamed(ListPage.routeName),
           ),
+          "Documentation Pending".text.white.make().p20(),
           ListTile(
             leading: Icon(
               LineAwesomeIcons.align_center,
-              color: Colors.white,
+              color: VelocityX.gray600,
             ),
-            title: "Object".text.white.xl2.make(),
+            title: "Object".text.gray600.xl2.make(),
             onTap: () {},
           ),
           ListTile(
             leading: Icon(
               LineAwesomeIcons.circle_o_notch,
-              color: Colors.white,
+              color: VelocityX.gray600,
             ),
-            title: "Opacity".text.white.xl2.make(),
+            title: "Opacity".text.gray600.xl2.make(),
             onTap: () {},
           ),
           ListTile(
             leading: Icon(
               LineAwesomeIcons.rotate_left,
-              color: Colors.white,
+              color: VelocityX.gray600,
             ),
-            title: "Transform".text.white.xl2.make(),
+            title: "Transform".text.gray600.xl2.make(),
             onTap: () {},
           ),
           ListTile(
             leading: Icon(
               LineAwesomeIcons.code,
-              color: Colors.white,
+              color: VelocityX.gray600,
             ),
-            title: "Velocity Widgets".text.white.xl2.make(),
+            title: "Velocity Widgets".text.gray600.xl2.make(),
             onTap: () {},
           ),
           ListTile(
             leading: Icon(
               LineAwesomeIcons.wrench,
-              color: Colors.white,
+              color: VelocityX.gray600,
             ),
-            title: "Utilities".text.white.xl2.make(),
+            title: "Utilities".text.gray600.xl2.make(),
             onTap: () {},
           ),
           ListTile(
             leading: Icon(
               LineAwesomeIcons.adjust,
-              color: Colors.white,
+              color: VelocityX.gray600,
             ),
-            title: "Responsive UI".text.white.xl2.make(),
+            title: "Responsive UI".text.gray600.xl2.make(),
             onTap: () {},
           ),
         ],
-      ).box.teal600.make(),
+      ).box.gray800.make(),
     );
   }
 }

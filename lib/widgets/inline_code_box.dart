@@ -1,28 +1,28 @@
 import 'package:flutter/material.dart';
 import 'package:velocity_x/velocity_x.dart';
 
-class CodeBox extends StatelessWidget {
+class InlineCodeBox extends StatelessWidget {
   final Widget data;
 
-  const CodeBox(
+  const InlineCodeBox(
     this.data, {
     Key key,
   }) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return data.box.gray800.p20.roundedSM.make(key: key).py8();
+    return data.box.teal800.p4.roundedSM.make();
   }
 }
 
-class CodeBoxText extends StatelessWidget {
+class InlineCodeBoxText extends StatelessWidget {
   final String data;
 
-  const CodeBoxText(
+  const InlineCodeBoxText(
     this.data, {
     Key key,
   }) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return data.selectableText.wide.lg.white.make(key: key);
+    return data.selectableText.wide.sm.white.bold.make(key: key).px2();
   }
 }
